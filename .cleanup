@@ -1,0 +1,31 @@
+#!/bin/bash
+
+Apps=(
+  Books
+  Calculator
+  Chess
+  Contacts
+  Dashboard
+  Dictionary
+  FaceTime
+  Home
+  'Image Capture'
+  Maps
+  Mail
+  Messages
+  'Photo Booth'
+  Reminders
+  Siri
+  Stickies
+  Stocks
+  'Time Machine'
+  VoiceMemos
+  iTunes
+)
+
+for app in "${Apps[@]}"
+do
+  sudo rm -rf "/Applications/$app.app"
+  echo "-$app"
+done
+
