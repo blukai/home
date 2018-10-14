@@ -1,5 +1,10 @@
 #!/bin/bash
 
+# Disable `csrutil` before executing this script
+# 1. Boot to Recovery OS by restarting your machine and holding down the Command and R keys at startup.
+# 2. Launch Terminal from the Utilities menu.
+# 3. Enter the following command: `csrutil enable`
+
 Apps=(
   Books
   Calculator
